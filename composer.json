@@ -1,0 +1,23 @@
+{
+    "name": "andrejudici/buscadadoscep",
+    "description": "Busca dados de CEP em web services free",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre Judici",
+            "email": "andre_judici@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "BuscaDadosCep": "src/"
+        },
+        "psr-4": {
+            "AndreJudici\\BuscaDadosCep\\": "src/" 
+        }
+    }
+}
