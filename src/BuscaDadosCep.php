@@ -59,8 +59,8 @@ class BuscaDadosCep
       switch ($api) {
          case BuscaDadosCep::API_VIACEP:
             $dados = $this->getDadosCep_ViaCep($cep);
-            if (isset($dados['cep']))
-               $dadosCep->setCep($dados['cep']);
+            if (isset($dados['cep'])) 
+               $dadosCep->setCep($dados['cep']); 
             if (isset($dados['localidade']))
                $dadosCep->setCidade($dados['localidade']);
             if (isset($dados['uf']))

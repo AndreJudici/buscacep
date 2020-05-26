@@ -18,6 +18,9 @@ class DadosCep
 
     public function setCep(string $cep)
     {
+        if ($cep && strpos($cep, '-') === false)
+            $cep = substr($cep, 0, 5) . '-' . substr($cep, 5); /* Coloca mascara do CEP */
+
         $this->cep = $cep;
     }
 
